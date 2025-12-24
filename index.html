@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GALING'S VIBE CODING GARDEN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Coming+Soon&family=Noto+Sans+TC:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: #C1CEFE; /* 指定色系：淺藍紫 */
+      font-family: 'Noto Sans TC', 'Patrick Hand', sans-serif;
+    }
+    .font-handwritten {
+      font-family: 'Patrick Hand', 'Noto Sans TC', cursive;
+    }
+    .font-sketch {
+      font-family: 'Coming Soon', 'Noto Sans TC', cursive;
+    }
+    .hand-drawn-shadow {
+      box-shadow: 6px 6px 0px 0px rgba(98, 76, 171, 0.2); /* 使用 #624CAB 的透明版 */
+    }
+    
+    /* 葉子藤蔓效果 */
+    .leafy-garden {
+      position: relative;
+      display: inline-block;
+      color: #533E2D; /* 指定色系：標題深褐 */
+    }
+    .leafy-garden::before {
+      content: '🌿';
+      position: absolute;
+      left: -32px;
+      top: -12px;
+      font-size: 0.6em;
+      transform: rotate(-20deg);
+      pointer-events: none;
+      filter: sepia(1) saturate(2) hue-rotate(120deg) brightness(0.7); /* 模擬 #3D7068 葉子色 */
+      color: #3D7068;
+    }
+    .leafy-garden::after {
+      content: '🍃';
+      position: absolute;
+      right: -28px;
+      bottom: -4px;
+      font-size: 0.5em;
+      transform: rotate(15deg);
+      pointer-events: none;
+      filter: sepia(1) saturate(2) hue-rotate(120deg) brightness(0.7);
+      color: #3D7068;
+    }
+    
+    .garden-title {
+      color: #533E2D; /* 指定色系：標題深褐 */
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.3em;
+    }
+
+    /* 捲軸美化 */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #C1CEFE;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #758ECD;
+      border-radius: 10px;
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+</body>
+</html>
