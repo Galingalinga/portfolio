@@ -90,7 +90,7 @@ const App: React.FC = () => {
       }}
     >
       {/* Audio Element */}
-      <audio ref={audioRef} src="/music/Crinoline Dreams.mp3" loop />
+      <audio ref={audioRef} src="./music/Crinoline Dreams.mp3" loop />
 
       {/* 塗鴉畫布 - 位於最底層 (z-0) */}
       <PaintCanvas
